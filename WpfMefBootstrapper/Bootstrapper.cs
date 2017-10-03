@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.Composition.Hosting;
+﻿using System.ComponentModel;
+using System.ComponentModel.Composition.Hosting;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -36,8 +37,8 @@ namespace WpfMefBootstrapper
 
             Log.Info("List of Parts -- End");
 
-            //  var provider = MefContainer.GetExportedValue();
-            // var appServices = Container.GetExportedValue(ExportNames.ApplicationService);
+            // Create Application Startup objects
+            var appServices = MefContainer.GetExportedValue<object>(ExportNames.ApplicationCreateAtStartup);
         }
 
         public static CompositionContainer MefContainer { get; private set; }

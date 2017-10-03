@@ -1,10 +1,19 @@
 ﻿using System.ComponentModel.Composition;
+using NLog;
 
 namespace WpfMefBootstrapper
 {
     [Export]
-    class SomeViewModel
+    internal class SomeViewModel
     {
+        private static Logger Log = LogManager.GetCurrentClassLogger();
+
+        [ImportingConstructor]
+        SomeViewModel()
+        {
+            Log.Debug("Created SomeViewModel....");
+        }
+
         public string SomeText => "Hello World";
     }
 }

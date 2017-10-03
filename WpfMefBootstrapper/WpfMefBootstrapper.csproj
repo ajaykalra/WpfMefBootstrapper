@@ -64,6 +64,8 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="BindableBase.cs" />
+    <Compile Include="ClientServices\SampleClientService.cs" />
+    <Compile Include="ExportNames.cs" />
     <Compile Include="RelayCommand.cs" />
     <Compile Include="SomeView.xaml.cs">
       <DependentUpon>SomeView.xaml</DependentUpon>
