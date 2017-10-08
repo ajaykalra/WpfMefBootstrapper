@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300" local:ViewModelLocator.AutoWireViewModel="True">
     <Grid>
-        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="{Binding SomeText}" VerticalAlignment="Center" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="{Binding SomeText}" VerticalAlignment="Center" FontSize="50"/>
 
     </Grid>
 </UserControl>

@@ -1,13 +1,18 @@
-﻿<Window x:Class="WpfMefBootstrapper.MainWindow"
+﻿<Controls:MetroWindow x:Class="WpfMefBootstrapper.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:local="clr-namespace:WpfMefBootstrapper"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="525" TitleCharacterCasing="Normal"
+        ResizeMode="CanResizeWithGrip"
+        WindowStartupLocation="CenterScreen"    
+        GlowBrush="{DynamicResource AccentColorBrush}"
+                       BorderThickness="2">
     <Grid>
        <local:SomeView Background="Bisque"></local:SomeView>
 
     </Grid>
-</Window>
+</Controls:MetroWindow>
