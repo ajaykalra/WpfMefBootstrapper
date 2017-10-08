@@ -9,5 +9,6 @@ namespace WpfMefBootstrapper
     public static class ExportNames
     {
         public const string ApplicationCreateAtStartup = "Application.CreateAtStartup";
+        public const string ApplicationBackgroundTaskAtStartup = "Application.BackgroundStartup";
     }
 }

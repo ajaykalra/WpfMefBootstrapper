@@ -16,7 +16,7 @@ namespace WpfMefBootstrapper
         private void App_OnStartup(object sender, StartupEventArgs e)
         {
             // This starts MEF composition
-            var bs = new Bootstrapper();
+            var bs = new Bootstrapper(e.Args);
 
         }
     }
