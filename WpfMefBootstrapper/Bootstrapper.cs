@@ -28,7 +28,6 @@ namespace WpfMefBootstrapper
 
         private void Initialize()
         {
-            
             Log.Info("Starting MEF Composition");
 
             var path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
@@ -41,18 +40,12 @@ namespace WpfMefBootstrapper
             Log.Info("Finished MEF Composition. Number of Parts: {0}", MefContainer.Catalog.Parts.Count());
             Log.Info("List of Parts -- Begin");
 
-            foreach (var composablePartDefinition in MefContainer.Catalog.Parts)
-            {
-                Log.Info(composablePartDefinition.ToString());
-            }
+            MefContainer.Catalog.Parts.ForEach(c => Log.Info(c.ToString()));
 
             Log.Info("List of Parts -- End");
 
             // Push commandline arguments to the container.
             MefContainer.ComposeExportedValue(new CommandLineArguments { Arguments = _args });
-
-          
-          
             PerformApplicatoinStartupTasks();
         }
 
