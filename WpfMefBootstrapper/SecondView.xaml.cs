@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace WpfMefBootstrapper
 {
     /// <summary>
-    /// Interaction logic for SomeUserControl.xaml
+    /// Interaction logic for SecondViewModel.xaml
     /// </summary>
-    public partial class SomeView : UserControl
+    public partial class SecondView : UserControl
     {
-        public SomeView()
+        public SecondView()
         {
             InitializeComponent();
         }

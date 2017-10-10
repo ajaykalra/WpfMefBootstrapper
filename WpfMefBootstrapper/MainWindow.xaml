@@ -6,13 +6,19 @@
         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:local="clr-namespace:WpfMefBootstrapper"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525" TitleCharacterCasing="Normal"
+        Title="MainWindow" Height="600" Width="800" TitleCharacterCasing="Normal"
         ResizeMode="CanResizeWithGrip"
         WindowStartupLocation="CenterScreen"    
         GlowBrush="{DynamicResource AccentColorBrush}"
                        BorderThickness="2">
     <Grid>
-       <local:SomeView Background="Bisque"></local:SomeView>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+       <local:FirstView Background="Bisque" Grid.Column="0"></local:FirstView>
+       <local:SecondView Background="AliceBlue" Grid.Column="1"></local:SecondView>
 
     </Grid>
 </Controls:MetroWindow>

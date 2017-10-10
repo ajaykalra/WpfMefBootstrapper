@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="WpfMefBootstrapper.SomeView"
+﻿<UserControl x:Class="WpfMefBootstrapper.SecondView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -8,6 +8,5 @@
              d:DesignHeight="300" d:DesignWidth="300" local:ViewModelLocator.AutoWireViewModel="True">
     <Grid>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="{Binding SomeText}" VerticalAlignment="Center" FontSize="50"/>
-
     </Grid>
 </UserControl>
